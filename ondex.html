@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+    <head>
+        <title>響應式網頁設計佈局練習</title>
+        <link rel="stylesheet" href="youstyle.css">
+    </head>   
+    <body>
+        <nav class="navbar">
+            <div class="logo" id="main-logo">11116143 劉恆志</div>
+            <ul class="nav-link">
+               <li><a href="https://share.google/N77DSVtnQ4YaLnTsa">米哈遊</a></li>
+               <li><a href="#">米哈遊</a></li>
+               <li><a href="#">米哈遊</a></li>
+               <li><a href="#">米哈遊</a></li>
+               <li><a href="#"class="btn-chat">contact us</a></li>
+            </ul>
+        </nav>
+
+        <header class="hero">
+        <div class="hero-content">
+            <h1 id="hero-title">我的未來，由<span class="highlight">訪客</span>主宰</h1>
+            <p>我正在學習響應式網頁設計</p>
+
+        <div class="chat-box">
+            <input type="text" id="user-input" placeholder=""請輸入你想跟AI聊的內容>
+            <button id="send-btn" class="btn-primary">發送指令</button>
+        </div>
+        <p id="ai-response">AI 助理:等待指令中</p>
+
+            <div class="hero-buttons">
+                 <button class="btn-primary" onclick="changecloor">變換顏色</button>
+                 <button class="btn-secondary">查看儲值點</button>
+            </div>
+        <div class="hero-image">
+             <img src="mihoyo.png">
+        </div>
+        
+        </header>
+
+        <script src="Java.js"></script>
+        <script>(function(){if(!window.chatbase||window.chatbase("getState")!=="initialized"){window.chatbase=(...arguments)=>{if(!window.chatbase.q){window.chatbase.q=[]}window.chatbase.q.push(arguments)};window.chatbase=new Proxy(window.chatbase,{get(target,prop){if(prop==="q"){return target.q}return(...args)=>target(prop,...args)}})}const onLoad=function(){const script=document.createElement("script");script.src="https://www.chatbase.co/embed.min.js";script.id="uXDf6r5ta5j_pWWic2Pbo";script.domain="www.chatbase.co";document.body.appendChild(script)};if(document.readyState==="complete"){onLoad()}else{window.addEventListener("load",onLoad)}})();
+</script>
+    </body>
+</html>
